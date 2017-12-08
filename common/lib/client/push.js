@@ -230,7 +230,6 @@ var Push = (function() {
 				return WaitingForNewPushDeviceDetails;
 			}
 
-			console.log('DEVICE', device.push.recipient);
 			if (device.push.recipient) {
 				machine.pendingEvents.push(new GotPushDeviceDetails());
 			} else {
